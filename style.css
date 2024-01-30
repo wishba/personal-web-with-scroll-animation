@@ -20,12 +20,38 @@ p {
   color: var(--color-black);
 }
 
+h2 {
+  text-align: center;
+}
+
 .color--secondary {
   color: var(--color-secondary);
 }
 
+.header__intro {
+  text-align: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.header__image {
+  width: 100%;
+  height: 100%;
+}
+
+.background p {
+  background-color: var(--color-white);
+}
+
 .fact {
   background-color: var(--color-secondary);
+
+}
+
+.fact ul {
+  padding: 0;
+  list-style: none;
 }
 
 .fact li {
@@ -34,6 +60,15 @@ p {
 
 .footer {
   background-color: var(--color-secondary);
+}
+
+.footer h2 {
+  text-align: left;
+}
+
+.footer ul {
+  padding: 0;
+  list-style: none;
 }
 
 .footer p {
@@ -50,6 +85,15 @@ p {
 }
 
 @media screen and (min-width: 600px) {
+  h2 {
+    text-align: left;
+  }
+
+  .work h2,
+  .love p {
+    text-align: center;
+  }
+
   .split {
     display: grid;
     grid-template-columns: 50% 50%;
