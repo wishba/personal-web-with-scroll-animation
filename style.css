@@ -116,6 +116,19 @@ ul {
 @media screen and (min-width: 600px) {
   h2 {
     text-align: left;
+    font-size: 3rem;
+  }
+
+  .header__intro h1 {
+    font-size: 5rem;
+  }
+
+  .header__intro p {
+    font-size: 1.5rem;
+  }
+
+  .background h2 {
+    margin-top: 2rem;
   }
 
   .work h2 {
@@ -182,5 +195,9 @@ ul {
 
   .love *:nth-child(5) {
     grid-area: 2/1/4/2;
+  }
+
+  .love p {
+    font-size: 2rem;
   }
 }
