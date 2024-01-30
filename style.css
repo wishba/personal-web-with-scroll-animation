@@ -150,7 +150,11 @@ section.fact {
     grid-area: 2/1/4/2;
   }
 
-  .header__intro {
-    transform: scale(1.5);
+  .header__intro h1 {
+    font-size: clamp(2rem, calc(100vw / 25), 5rem);
+  }
+
+  .header__intro p {
+    font-size: clamp(1rem, calc(100vw / 50), 2.5rem);
   }
 }
