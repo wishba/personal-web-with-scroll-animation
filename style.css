@@ -1,10 +1,52 @@
+:root {
+  --color-primary: #e7efe1;
+  --color-secondary: #1fc667;
+  --color-black: #191919;
+  --color-white: #ffffff;
+}
+
+body {
+  background-color: var(--color-primary);
+}
+
 img {
   max-width: 100%;
 }
 
-.social__icon {
+h1,
+h2,
+p {
+  font-weight: bold;
+  color: var(--color-black);
+}
+
+.color--secondary {
+  color: var(--color-secondary);
+}
+
+.fact {
+  background-color: var(--color-secondary);
+}
+
+.fact li {
+  background-color: var(--color-white);
+}
+
+.footer {
+  background-color: var(--color-secondary);
+}
+
+.footer p {
+  color: var(--color-white);
+}
+
+.footer__icon {
   display: flex;
   height: 24px;
+}
+
+.footer__icon svg {
+  fill: var(--color-white);
 }
 
 @media screen and (min-width: 600px) {
