@@ -5,11 +5,12 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Scroll Animation</title>
+  <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
   <link rel="stylesheet" href="style.css">
 </head>
 
 <body>
-  <header class="--evenly">
+  <header data-aos="zoom-in" class="--evenly">
     <div class="header__intro">
       <p>HI everyone, my name is</p>
       <h1>Hannah Morales</h1>
@@ -20,10 +21,8 @@
     </div>
   </header>
 
-  <section class="--evenly background">
-    <div>
-      <h2>A Quick Background</h2>
-    </div>
+  <section data-aos="zoom-in" data-aos-delay="500" class="--evenly background">
+    <h2>A Quick Background</h2>
     <ul>
       <li>
         <p class="--color--secondary">I'm based in</p>
@@ -41,17 +40,17 @@
   </section>
 
   <section class="--area">
-    <h2>Here's a showcase of my creative work!</h2>
-    <div>
+    <h2 data-aos="fade-right">Here's a showcase of my creative work!</h2>
+    <div data-aos="flip-left" data-aos-duration="1500">
       <img src="https://source.unsplash.com/random/rnd=1/?art" alt="showcase">
     </div>
-    <div>
+    <div data-aos="flip-left" data-aos-offset="300" data-aos-duration="1500">
       <img src="https://source.unsplash.com/random/rnd=2/?art" alt="showcase">
     </div>
-    <div>
+    <div data-aos="flip-left" data-aos-offset="300" data-aos-duration="1500">
       <img src="https://source.unsplash.com/random/rnd=3/?art" alt="showcase">
     </div>
-    <div>
+    <div data-aos="flip-left" data-aos-offset="300" data-aos-duration="1500">
       <img src="https://source.unsplash.com/random/rnd=4/?art" alt="showcase">
     </div>
   </section>
@@ -59,15 +58,15 @@
   <section class="--evenly fact">
     <h2>Three Fun Facts</h2>
     <ul>
-      <li>
+      <li data-aos="fade-up">
         <p class="--color--secondary">I used to be a freelancer.</p>
         <p>After college, I worked on freelance projects for small businesses in my hometown.</p>
       </li>
-      <li>
+      <li data-aos="fade-up">
         <p class="--color--secondary">I run a creative blog on the side.</p>
         <p>It features some of my freelance work as well as personal projects that I've done since high school.</p>
       </li>
-      <li>
+      <li data-aos="fade-up">
         <p class="--color--secondary">I love collecting art materials.</p>
         <p>I do a lot of digital art, but I also love collecting crafty materials like washi tapes.</p>
       </li>
@@ -75,15 +74,15 @@
   </section>
 
   <section class="--area --center">
-    <h2>Things I Love</h2>
+    <h2 data-aos="fade-right" data-aos-duration="1500">Things I Love</h2>
     <p>These are just some of the things that make me feel alive!</p>
-    <div>
+    <div data-aos="flip-left" data-aos-offset="250" data-aos-duration="1500">
       <img src="https://source.unsplash.com/random/rnd=5/?hobbies" alt="showcase">
     </div>
-    <div>
+    <div data-aos="flip-left" data-aos-offset="250" data-aos-duration="1500">
       <img src="https://source.unsplash.com/random/rnd=6/?hobbies" alt="showcase">
     </div>
-    <div>
+    <div data-aos="flip-left" data-aos-duration="1500">
       <img src="https://source.unsplash.com/random/rnd=7/?hobbies" alt="showcase">
     </div>
   </section>
@@ -117,6 +116,11 @@
       </li>
     </ul>
   </footer>
+
+  <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+  <script>
+    AOS.init();
+  </script>
 </body>
 
 </html>
