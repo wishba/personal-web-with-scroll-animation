@@ -1,1 +1,1 @@
-# https://wishba.github.io/scroll-animation/
+# https://wishba.github.io/personal-web-with-scroll-animation/
